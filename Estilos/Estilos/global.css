@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Built';
+    src: url(Fontes/Built/built\ titling\ bd.ttf);
+}
+
+body, html {
+    scroll-behavior: smooth;
+}
