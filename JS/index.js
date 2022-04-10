@@ -20,8 +20,10 @@ function menuMobile(botao, menu, checkBox) {
             headerLogo = document.getElementById('header-logo-box-imagem');
 
 
-            //botao.style.trasnform= 'rotate(-90deg)';
+            
             if (checkBox.checked) {
+                botao.style.transform = 'rotate(-90deg)';
+
                 menu.style.transform = 'translateY(0)';
                 console.log('abriu');
 
@@ -32,6 +34,8 @@ function menuMobile(botao, menu, checkBox) {
     
             }
             else {
+                botao.style.transform = 'rotate(0)';
+
                 menu.style.transform = 'translateY(-100%)';
                 console.log('fechou');
 
@@ -46,17 +50,22 @@ function menuMobile(botao, menu, checkBox) {
 };
 
 function fecharMenuMobile() {
+    
     menu = document.getElementById('menu-mobile');
     checkBox = document.getElementById('menu-mobile-check');
     botao = document.getElementById('menu-mobile-button');
     headerLogo = document.getElementById('header-logo-box-imagem');
 
 
+    botao.style.transform = 'rotate(0)';
+
     menu.style.transform = 'translateY(-100%)';
     console.log('fechou');
 
     botao.style.color = 'white';
     headerLogo.style.filter = 'none';
+
+    checkBox.checked = false;
 
     document.getElementById('header').style.position = 'absolute';
 
