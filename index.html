@@ -19,20 +19,20 @@
 </style>
 
 <body>
-    <div class="tudo">
+    <div class="tudo" id="tudo">
 
-        <header>
+        <header id="header">
             <nav>
                 <ul>
                     <div class="header-logo-box">
-                        <img src="Estilos/Imagens/Logos/sevenTextLogoWhite.png" alt="SEVEN Logo">
+                        <img src="Estilos/Imagens/Logos/sevenTextLogoWhite.png" alt="SEVEN Logo" id="header-logo-box-imagem">
                     </div>
                     <div class="header-menu-options">
                         <li class="header-menu-options-atual"><a href="" >Início</a></li>
-                        <li><a href="">Sobre nós</a></li>
-                        <li><a href="">Patrocinadores</a></li>
-                        <li><a href="">Temporada 2022</a></li>
-                        <li><label for="menu-mobile-check" class="menu-mobile-button"><i class="fas fa-bars"></i></label></li>
+                        <li><a href="#secao-2">Times</a></li>
+                        <li><a href="">Conquistas</a></li>
+                        <li><a href="">Associações</a></li>
+                        <li><label onclick="menuMobile()" for="menu-mobile-check" class="menu-mobile-button" id="menu-mobile-button"><i class="fas fa-bars"></i></label></li>
                         <input type="checkbox" name="" id="menu-mobile-check">
                     </div>
 
@@ -162,6 +162,32 @@
 
             </div>
         </section>
+
+
+        <div class="menu-mobile" id="menu-mobile">
+            <nav>
+                <ul>
+                    <li><a href="#secao-2" onclick="fecharMenuMobile()">
+                        <div class="dentro-menu-mobile-a">
+                            <i class="fas fa-user-friends"></i>
+                        </div>
+                        
+                    </a> <h3>Times</h3></li>
+
+                    <li><a href="">
+                        <div class="dentro-menu-mobile-a">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                    </a> <h3>Conquistas</h3></li>
+
+                    <li><a href="">
+                        <div class="dentro-menu-mobile-a">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                    </a> <h3>Associações</h3></li>
+                </ul>
+            </nav>
+        </div>
     </div>
 
     <script src="JS/index.js"></script>
