@@ -79,16 +79,3 @@
 }
 
 
-@media screen and (min-height: 660px) {
-    .secao-1 {
-        height: 700px;
-    }
-}
-
-@media screen and (min-height: 750px) {
-    .secao-1 {
-        height: 750px;
-    }
-}
-
-
