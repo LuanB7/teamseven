@@ -1,0 +1,74 @@
+@media screen and (max-width: 900px) {
+    .header-menu-options li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+    .header-menu-options a {
+        display: none;
+    }
+
+    /*Menu mobile*/
+
+    .menu-mobile-button {
+        font-size: 30px;
+    }
+        #menu-mobile-check {
+            display: none;
+        }
+
+    /*Seções*/
+
+    .secao h1 {
+        font-size: 40px;
+    }
+
+
+    /*Seção 1*/
+
+    .secao-1-back {
+        background-size: 20%;
+    }
+
+    .dentro-secao-1 {
+        flex-direction: column;
+    }
+
+    .s1-esq, .s1-dir {
+        width: 100%;
+    }
+
+        .s1-esq {
+            display: none;
+        }
+
+        .s1-dir {
+            height: 100%;
+        }
+
+        .s1-dir-seven-logo {
+            width: 230px;
+        }
+
+        .s1-dir-botao-conheca {
+            font-size: 22px;
+        }
+
+    /*Seção 2*/
+
+}
+
+@media screen and (max-width: 800px) {
+    .time-box {
+        width: 80%;
+        min-width: 80%;
+        padding-bottom: 100%;
+        margin-right: 20px;
+        
+        
+    }
+}
+
+
