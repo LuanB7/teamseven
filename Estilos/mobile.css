@@ -1,3 +1,11 @@
+.menu-mobile-button {
+    display: none;
+}
+
+#menu-mobile-check {
+    display: none;
+}
+
 @media screen and (max-width: 900px) {
     .header-menu-options li {
         display: flex;
@@ -14,10 +22,9 @@
 
     .menu-mobile-button {
         font-size: 30px;
+        display: block;
     }
-        #menu-mobile-check {
-            display: none;
-        }
+        
 
     /*Seções*/
 
@@ -68,6 +75,19 @@
         margin-right: 20px;
         
         
+    }
+}
+
+
+@media screen and (min-height: 660px) {
+    .secao-1 {
+        height: 700px;
+    }
+}
+
+@media screen and (min-height: 750px) {
+    .secao-1 {
+        height: 750px;
     }
 }
 
