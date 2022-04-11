@@ -14,10 +14,10 @@ function menuMobile(botao, menu, checkBox) {
     setTimeout(
         function(){
 
-            menu = document.getElementById('menu-mobile');
-            checkBox = document.getElementById('menu-mobile-check');
-            botao = document.getElementById('menu-mobile-button');
-            headerLogo = document.getElementById('header-logo-box-imagem');
+            const menu = document.getElementById('menu-mobile');
+            const checkBox = document.getElementById('menu-mobile-check');
+            const botao = document.getElementById('menu-mobile-button');
+            const headerLogo = document.getElementById('header-logo-box-imagem');
 
 
             
@@ -51,10 +51,10 @@ function menuMobile(botao, menu, checkBox) {
 
 function fecharMenuMobile() {
     
-    menu = document.getElementById('menu-mobile');
-    checkBox = document.getElementById('menu-mobile-check');
-    botao = document.getElementById('menu-mobile-button');
-    headerLogo = document.getElementById('header-logo-box-imagem');
+    const menu = document.getElementById('menu-mobile');
+    const checkBox = document.getElementById('menu-mobile-check');
+    const botao = document.getElementById('menu-mobile-button');
+    const headerLogo = document.getElementById('header-logo-box-imagem');
 
 
     botao.style.transform = 'rotate(0)';
@@ -69,4 +69,30 @@ function fecharMenuMobile() {
 
     document.getElementById('header').style.position = 'absolute';
 
+}
+
+
+function abrirModalTime() {
+    var modal = document.getElementById('ver-time-modal');
+    var modalBack = document.getElementById('ver-time-modal-back');
+
+    modal.style.visibility = 'visible';
+    modal.style.opacity = '1';
+    modal.style.transform = 'translate(-50%, -50%)';
+
+    modalBack.style.visibility = 'visible';
+    modalBack.style.opacity = '1';
+    
+}
+
+function fecharModalTime() {
+    var modal = document.getElementById('ver-time-modal');
+    var modalBack = document.getElementById('ver-time-modal-back');
+
+    modal.style.visibility = 'hidden';
+    modal.style.opacity = '0';
+    modal.style.transform = 'translate(-50%, -100%)';
+
+    modalBack.style.visibility = 'hidden';
+    modalBack.style.opacity = '0';
 }

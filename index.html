@@ -78,7 +78,7 @@
  
                              <div class="time-box-conteudo">
                                  <h2>Fortnite</h2>
-                                 <button>VER TIME</button>
+                                 <button onclick="abrirModalTime()">VER TIME</button>
                              </div>
                         </div>
  
@@ -170,8 +170,8 @@
         </section>
 
 
-        <div class="ver-time-modal-back"></div>
-        <div class="ver-time-modal">
+        <div class="ver-time-modal-back" id="ver-time-modal-back" onclick="fecharModalTime()"></div>
+        <div class="ver-time-modal" id="ver-time-modal">
             <div class="dentro-ver-time-modal">
                 <h1>SEVEN FORTNITE</h1>
 
@@ -198,6 +198,8 @@
                         <p>8. William</p>
                     </div>
                 </div>
+
+                <h4 class="ver-time-modal-conquistas"><i class="fas fa-trophy"></i> <span id="ver-time-modal-conquistas-numero">5</span></h4>
 
             </div>
 
