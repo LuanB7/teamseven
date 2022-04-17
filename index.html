@@ -55,7 +55,7 @@
                         <img src="Estilos/Imagens/Logos/sevenTextLogoWhite.png" alt="">
                     </div>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quibusdam repellat reprehenderit at.</p>
+                    <p>O mió time de E-sports que tá tendo, confia. 2022 é nosso, pai.</p>
 
                     
                     <button class="s1-dir-botao-conheca" onclick="abrirLink(0, '#secao-2')">Nos conheça</button>
@@ -78,7 +78,7 @@
  
                              <div class="time-box-conteudo">
                                  <h2>Fortnite</h2>
-                                 <button onclick="abrirModalTime()">VER TIME</button>
+                                 <button onclick="abrirModalTime.apply(null, fortTimeDados)">VER TIME</button>
                              </div>
                         </div>
  
@@ -165,41 +165,56 @@
 
         <section class="secao-3 secao">
             <div class="dentro-secao-3 dentro-secao">
-                a
+                
             </div>
         </section>
+
+
+
+        <footer>
+
+            <div class="footer-copyright">SEVEN Team Copyright 2022 ©</div>
+            <div class="dentro-footer">
+                <ul>
+                    <li class="header-menu-options-atual"><a href="" >Início</a></li>
+                    <li><a href="#secao-2">Times</a></li>
+                    <li><a href="">Conquistas</a></li>
+                    <li><a href="">Associações</a></li>
+                </ul>
+            </div>
+        </footer>
 
 
         <div class="ver-time-modal-back" id="ver-time-modal-back" onclick="fecharModalTime()"></div>
         <div class="ver-time-modal" id="ver-time-modal">
             <div class="dentro-ver-time-modal">
-                <h1>SEVEN FORTNITE</h1>
+                <h1 id="m-t-game">SEVEN FORTNITE</h1>
 
                 <div class="ver-time-modal-escalacao-box">
                     <div class="ver-time-modal-escalado">
                         <i class="fas fa-tshirt"></i>
-                        <h3>7</h3>
-                        <p>7. Overt4ker</p>
+                        <h3 id="m-t-num-1">7</h3>
+                        <p id="m-t-nome-1">7. Overt4ker</p>
                     </div>
 
                     <div class="ver-time-modal-escalado">
                         <i class="fas fa-tshirt"></i>
-                        <h3>0</h3>
-                        <p>0. Blackx</p>
+                        <h3 id="m-t-num-2">0</h3>
+                        <p id="m-t-nome-2">0. Blackx</p>
                     </div>
                     <div class="ver-time-modal-escalado">
                         <i class="fas fa-tshirt"></i>
-                        <h3>10</h3>
-                        <p>10. Rafael</p>
+                        <h3 id="m-t-num-3">10</h3>
+                        <p id="m-t-nome-3">10. Rafael</p>
                     </div>
                     <div class="ver-time-modal-escalado">
                         <i class="fas fa-tshirt"></i>
-                        <h3>8</h3>
-                        <p>8. William</p>
+                        <h3 id="m-t-num-4">8</h3>
+                        <p id="m-t-nome-4">8. William</p>
                     </div>
                 </div>
 
-                <h4 class="ver-time-modal-conquistas"><i class="fas fa-trophy"></i> <span id="ver-time-modal-conquistas-numero">5</span></h4>
+                <h4 class="ver-time-modal-conquistas"><i class="fas fa-trophy"></i> <span id="ver-time-modal-conquistas-numero">0</span></h4>
 
             </div>
 

@@ -72,9 +72,45 @@ function fecharMenuMobile() {
 }
 
 
-function abrirModalTime() {
+function abrirModalTime(game, n1, c1, n2, c2, n3, c3, n4, c4, titulosNum) {
     var modal = document.getElementById('ver-time-modal');
     var modalBack = document.getElementById('ver-time-modal-back');
+
+    const gameTime = document.getElementById('m-t-game');
+
+    const num1 = document.getElementById('m-t-num-1');
+    const nome1 = document.getElementById('m-t-nome-1');
+
+    const num2 = document.getElementById('m-t-num-2');
+    const nome2 = document.getElementById('m-t-nome-2');
+
+
+    const num3 = document.getElementById('m-t-num-3');
+    const nome3 = document.getElementById('m-t-nome-3');
+
+
+    const num4 = document.getElementById('m-t-num-4');
+    const nome4 = document.getElementById('m-t-nome-4');
+
+    const titulos = document.getElementById('ver-time-modal-conquistas-numero');
+
+    
+    gameTime.innerHTML = `${game}`;
+
+    nome1.innerHTML = n1;
+    num1.innerHTML = c1;
+
+    nome2.innerHTML = n2;
+    num2.innerHTML = c2;
+
+    nome3.innerHTML = n3;
+    num3.innerHTML = c3;
+
+    nome4.innerHTML = n4;
+    num4.innerHTML = c4;
+
+    titulos.innerHTML = titulosNum;
+
 
     modal.style.visibility = 'visible';
     modal.style.opacity = '1';
@@ -96,3 +132,8 @@ function fecharModalTime() {
     modalBack.style.visibility = 'hidden';
     modalBack.style.opacity = '0';
 }
+
+//fecharModal Fortnite dados
+
+const fortTimeDados = ['SEVEN FORTNITE', '7. Overt4ker', '7', '0. Blackx', '0', '0. Rafael', '0', '8. William', '8', '0'];
+

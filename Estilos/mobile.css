@@ -135,7 +135,7 @@
     width: 100%;
     
     display: block;
-    background-color: rgba(0, 62, 88, 0.062);
+    background-color: rgba(0, 81, 255, 0.062);
     padding-bottom: 80%;
 
     border-radius: 7px;
@@ -145,8 +145,13 @@
     align-items: center;
     position: relative;
 
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    transition: 0.3s;
   
 }
+    .menu-mobile li a:active {
+        background-color: rgba(0, 81, 255, 0.15);;
+    }
 
 .dentro-menu-mobile-a {
     top: 0;

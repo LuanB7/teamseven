@@ -17,6 +17,8 @@ header {
     top: 0;
     z-index: 1000;
     color: white;
+
+    animation: headerAnim 1s;
     
 }
 
@@ -34,6 +36,7 @@ header li {
 header a {
     text-decoration: none;
     color: white;
+
     
 }
 
@@ -90,6 +93,7 @@ header nav  ul{
 
 .header-logo-box img {
     width: 100%;
+    
 }
 
 /*---------Seções*/
@@ -157,6 +161,7 @@ header nav  ul{
     filter: contrast(0%) brightness(1000);
     
     max-width: 421px;
+    animation: calopiaLogo 1.5s;
 
 }
 
@@ -172,6 +177,33 @@ header nav  ul{
     
    
 }
+
+@keyframes calopiaLogo {
+    0% {
+        margin-left: -100%;
+        opacity: 0.2;
+        
+    }
+
+    100% {
+        margin-left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes headerAnim {
+    0% {
+        margin-top: -10%;
+        opacity: 0;
+        
+    }
+
+    100% {
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+
 
     .s1-dir-seven-logo-back {
         width: 100%;
